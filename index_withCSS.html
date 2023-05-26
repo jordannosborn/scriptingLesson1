@@ -1,0 +1,49 @@
+html lang="en"> 
+
+<head> 
+    <meta charset="utf-8">
+    <link href="myStyle.css" rel="stylesheet">
+    <title>Activity 2.5</title>
+    <style>
+        body{
+            background-image: url("bali.png");
+            background-repeat: repeat-y; 
+            margin-left: 300px;  
+        }
+        /* using pseudo-class hover to create a dynamic webpage
+            picture changes when user hovers over the card. 
+        */
+        .card{
+            width: 100px; 
+            height: 200px; 
+            background-image: url("5clubs.png"); 
+            background-repeat: no-repeat; 
+            background-size: 100%; 
+        }
+        .cardhover{
+            background-image: url("5diamonds.png"); 
+            width: 100px; 
+            height: 125px; 
+            background-size: 100%; 
+        }
+    </style>
+    <script>
+        function myFunction()
+        {
+            document.getElementById("div1").innerhtml += "<br>New text";
+        }
+    </script>
+</head>
+<body>
+    <h1>Using W3Schools JavaScript tutorial</h1>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <div id="div1">
+        This line of text will be changed by javascript
+    </div>
+    <div class=""card></div>
+    <script>
+        document.writeIn("<h1>This line comes from JavaScript</h1>");
+    </script>
+</body>
+
+</html>

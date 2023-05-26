@@ -1,0 +1,31 @@
+html lang="en"> 
+
+<head> 
+    <meta charset="utf-8">
+    <link href="myStyle.css" rel="stylesheet">
+    <title>Activity 2.5</title>
+    <script> 
+         function myFunction() {
+            document.getElementById("div1").innerHTML += "<br>New text"; 
+        }
+        function changePic() {
+            document.getElementById("pic1").src = "temple.png";
+        }
+        function revertPic() {
+            document.getElementById("pic1").src = "bali.png";
+        }
+    </script>
+</head>
+<body>
+    <h1>Using W3Schools JavaScript tutorial</h1>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <div id="div1">
+        This line of text will be changed by javascript
+    </div>
+    <img id="pic1" src="bali.png" alt="girl in treehouse - image" height="200px" width="200px">
+    <br>
+    <button type="button" onclick="changePic()">Change picture</button>
+    <button type="button" onclick="revertPic()">Revert picture</button>
+</body>
+
+</html>
